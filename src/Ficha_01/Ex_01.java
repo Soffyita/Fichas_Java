@@ -24,7 +24,7 @@ System.out.println("Bom dia! Bem-vindo ao meu primeiro programa!");
         soma = num1 + num2;
 
         //Apresentar resultado
-        System.out.println("soma: "+ soma);
+        System.out.println("soma: " + soma);
 
     }
 }

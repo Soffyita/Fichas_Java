@@ -20,7 +20,7 @@ public class Ex_05 {
         mediaArt = (valor1 + valor2 + valor3)/3;
         mediaPon = (valor1 * 0.2) + (valor2 * 0.3) + (valor3 * 0.5);
 
-        System.out.println("A média aritmética das notas acima é: " + mediaArt);
+        System.out.println("\nA média aritmética das notas acima é: " + mediaArt);
         System.out.println("A média ponderada das notas acima é: " + mediaPon);
     }
 }

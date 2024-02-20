@@ -13,11 +13,11 @@ public class Ex_02 {
 
         //Ler valor1
         System.out.println("Insira um número inteiro");
-        valor1 = input.nextInt();
+        valor1 = input.nextDouble();
 
         //Ler valor2
         System.out.println("Insira outro número inteiro");
-        valor2 = input.nextInt();
+        valor2 = input.nextDouble();
 
         //Somar valor1 com valor2
         soma = valor1 + valor2;

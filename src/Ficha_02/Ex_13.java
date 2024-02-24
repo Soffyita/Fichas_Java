@@ -19,23 +19,22 @@ public class Ex_13 {
         System.out.println("Introduza os minutos");
         minutos = input.nextInt();
 
-        if ((horas >=1) && (horas <= 11)); {
+        if ((horas >= 1) && (horas <= 11)) {
             System.out.println("São " + horas + ":" + minutos + " AM");
         } else {
-            if (horas == 0); {
+            if (horas == 0) {
                 System.out.println("São " + 12 + ":" + minutos + " AM");}
+            else {
+                if ((horas >=13) && (horas <= 23)) {
+                    System.out.println((horas -12) + ":" + minutos +" PM");
+                }
             }
+
         }
 
 
-              //  else {
-                //if (horas == 0); {
-                  //  System.out.println(12 + ":" + minutos + " AM");}
-        }
-        //else {
-          //  if ((horas >=13) && (horas <= 23));}
-        {
-            //System.out.println((horas - 12) + ":" + minutos + " PM");}
 
-    }
-}
+
+
+    }}
+

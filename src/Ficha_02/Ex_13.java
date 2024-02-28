@@ -26,7 +26,10 @@ public class Ex_13 {
                 System.out.println("São " + 12 + ":" + minutos + " AM");}
             else {
                 if ((horas >=13) && (horas <= 23)) {
-                    System.out.println((horas -12) + ":" + minutos +" PM");
+                    System.out.println((horas -12) + ":" + minutos +" PM");}
+                else {
+                    if (horas == 12) {
+                        System.out.println("São " + 12 + ":" + minutos + " PM");}
                 }
             }
 

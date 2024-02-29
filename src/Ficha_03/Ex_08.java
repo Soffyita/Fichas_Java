@@ -10,7 +10,7 @@ public class Ex_08 {
         Scanner input = new Scanner(System.in);
 
         //Declarar variáveis
-        int num, numAnt=-5, numSeg=+5;
+        int num, numAnt, numSeg;
 
         //Ler valores
         System.out.println("Indique, por favor, um número: ");

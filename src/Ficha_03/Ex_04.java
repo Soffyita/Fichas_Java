@@ -17,9 +17,9 @@ public class Ex_04 {
         inicio = 0;
 
         //Ler o resultado
-        while (num <= inicio) {
-            System.out.println(num);
-            num = num +1 ;
+        while (inicio <= num) {
+            System.out.println(inicio);
+            inicio=inicio+1;
         }
 
 

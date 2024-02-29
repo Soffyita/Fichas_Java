@@ -9,16 +9,21 @@ public class Ex_05 {
         Scanner input = new Scanner(System.in);
 
         //Declarar variáveis
-        int num;
+        int num, inicio = 1;
         String mensagem;
 
         //Ler variáveis
-        System.out.println("Indique um número: ");
-        num = input.nextInt();
         System.out.println("Introduza a mensagem que deseja repetir:");
         mensagem = input.nextLine();
+        System.out.println("Indique um número: ");
+        num = input.nextInt();
+
 
         //Ler resultado
+        while (inicio<=num){
+            System.out.println(mensagem);
+            inicio=inicio+1;
+        }
 
 
     }

@@ -1,7 +1,5 @@
 package Ficha_03;
 
-import javax.sound.midi.Soundbank;
-
 public class Ex_07 {
     public static void main(String[] args) {
 

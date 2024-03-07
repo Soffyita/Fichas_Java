@@ -10,11 +10,18 @@ public class Ex_10 {
         Scanner input = new Scanner(System.in);
 
         //Declarar variáveis
-        int num, inicio = 2;
+        int num, inicio=2;
 
         System.out.println("Indique um número: ");
         num = input.nextInt();
 
+         while (inicio<=num) {
+                System.out.println(inicio);
+                inicio=inicio+2;
+         }
 
     }
-}
+
+
+    }
+

@@ -12,7 +12,10 @@ public class Ex_05 {
         int num, inicio = 1;
         String mensagem;
 
-        //Ler variáveis
+        //Limpeza de buffer - apanhar o enter, quando o string vem depois de outra questão
+        input.nextLine();
+
+    //Ler variáveis
         System.out.println("Introduza a mensagem que deseja repetir:");
         mensagem = input.nextLine();
         System.out.println("Indique um número: ");

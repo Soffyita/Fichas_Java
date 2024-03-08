@@ -1,53 +1,31 @@
-//package Ficha_ExtraCiclos;
-//
-//public class Ex_04_03 {
-//    public static void main(String[] args) {
-//        /***************4.3*******************/
-//
-//
-//        int linha = 1;
-//        int espaco = 1;
-//        int asterisco =1
-//
-//        for (int h = 0; h < linha; h++) {
-//            linha=linha+2;
-//            for (int k = 9; k > coluna; k--) {
-//
-//                System.out.print("*");
-//            }
-//            System.out.println();
-//
-//        }
-//
-//    }
-//}
-package FichaPraticaExtra_Ciclos;
+package Ficha_ExtraCiclos;
 
 public class Ex_04_03 {
     public static void main(String[] args) {
         int linhas = 5; // Número de linhas a serem impressas
-        int espacos = linhas - 1; // Número inicial de espaços em cada linha
-        int asteriscos = 1; // Número inicial de asteriscos em cada linha
+        int espacos = 4; // Número inicial de espaços em cada linha
+        int colunas = 1; // Número inicial de asteriscos em cada linha
 
         // Ciclo para cada linha
-        for (int i = 0; i < linhas; i++) {
+        for (int h = 0; h < linhas; h++) {
 
             // Imprimir espaços em branco
-            for (int j = 0; j < espacos; j++) {
+            for (int k = 0; k < espacos; k++) {
                 System.out.print(" ");
+
             }
+            espacos--;
 
             // Imprimir asteriscos
-            for (int j = 0; j < asteriscos; j++) {
+            for (int m = 0; m < colunas; m++) {
                 System.out.print("*");
+
             }
+            colunas=colunas+2;
 
             // Enter
             System.out.println();
 
-            // Atualizar contadores de espaços e asteriscos para a próxima linha
-            espacos--;
-            asteriscos += 2;
         }
     }
 }

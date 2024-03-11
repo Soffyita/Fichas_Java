@@ -8,29 +8,44 @@ public class Ex_07 {
         // Importar scanner
         Scanner input = new Scanner(System.in);
 
+        // Declarar variáveis
+        int[] vetor = new int[10];
+        int maiorPar;
+        boolean jaTemPar = false; //utilizamos esta variável para assegurar que criamos um espaço para entrar um n par
 
-        //Declarar variáveis
-        int[] num = new int[10];
-        int maiorValorPar;
+        System.out.println("**************************");
 
-        for (int a = 0; a < num.length; a++) {
-            System.out.println("Insira um número no vetor [" + a + "]");
-            num[a] = input.nextInt();
+        // Ler vetor
+        for (int i = 0; i < vetor.length; i++) {
+            System.out.print("Insira um número no vetor[" + i + "]: ");
+            vetor[i] = input.nextInt();
         }
-        maiorValorPar = -1; //valor impar a preencher
 
-        for (int a = 0; a < num.length; a++) {
-            if ((num[a] >= maiorValorPar) && (num[a] % 2 == 0)) {
-                maiorValorPar = num[a];
+        maiorPar = -1;
+
+        // Encontrar o maior par
+        for (int i = 0; i < vetor.length; i++) {
+
+            if (vetor[i] % 2 == 0) {
+
+                if (!jaTemPar) {
+                    maiorPar = vetor[i];
+                    jaTemPar=true;
+                }
+
+                if (vetor[i] > maiorPar) {
+                    maiorPar = vetor[i];
+                }
 
             }
         }
 
-//        }
-//        System.out.println("O maior valor par é: " + maiorValorPar);
-//
-//else {
-//            System.out.println("Não existe maior valor par!");
+        // Apresentar o maior par
+        if(maiorPar%2==0){
+            System.out.println("Maior Par: "+maiorPar);
+        }else{
+            System.out.println("Não tem pares!");
+        }
     }
 
 }

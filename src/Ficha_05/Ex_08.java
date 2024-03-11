@@ -18,7 +18,7 @@ public class Ex_08 {
 
         }
 
-        //Necessário imprimir a matriz multidimensional
+        //Necessário imprimir a matriz bidimensional
 
         for (int k = 0; k < matriz.length; k++) {
             for (int m = 0; m < matriz.length; m++) {

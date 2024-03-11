@@ -13,7 +13,7 @@ public class Ex_09 {
 
         for (int k = 0; k < matriz.length; k++) {
             for (int m = 0; m < matriz.length; m++) {
-                System.out.println("Insira um número na matriz [" + k + "]["+ m + "]");
+                System.out.println("Insira um número na matriz [" + k + "]["+ m + "] : ");
                 matriz[k][m] = input.nextInt();
                 somatorio+= matriz [k][m];
 

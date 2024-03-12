@@ -61,21 +61,26 @@ public class Ex_03 {
 
     }
 
-}
 
-public static boolean triangular(int num) {
+    public static boolean triangular(int num) {
 
-    int somaInteiros =0 , contador=1;
+        int somaInteiros = 0, contador = 1;
 
-    while (somaInteiros<num) {
-        somaInteiros=somaInteiros+contador;
-        contador++;
+        while (somaInteiros < num) {
+            somaInteiros = somaInteiros + contador;
+            contador++;
 
-        if (somaInteiros==num) {
-            return true;
+            if (somaInteiros == num) {
+                return true;
+            }
         }
-        }
+                return false;
+            }
+
+
     }
+
+
 
 
 

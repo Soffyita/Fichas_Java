@@ -16,7 +16,7 @@ public class Ex_02 {
         int num;
 
         do{
-            System.out.print("Insira um inteiro positivo: ");
+            System.out.print("Insira um número inteiro positivo: ");
             num=input.nextInt();
         }while(num<0);
 

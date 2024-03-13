@@ -15,30 +15,32 @@ public class Ex_06 {
 
         int tamanhoVetor, opcao;
 
+
         System.out.println("Indique o tamanho do vetor que deseja preencher: ");
         tamanhoVetor= input.nextInt();
 
+        int [] vetor = new int [tamanhoVetor];
 
-
-        for (int k = 0; k < 10; k++) {
+        for (int k = 0; k < vetor.length; k++) {
             System.out.print("Insira um número no vetor [" + k + "]: ");
-            vetor[k] = input.nextInt();
+            vetor [k] = input.nextInt();
         }
 
-        for (int k = 0; k < 10; k++) {
+        for (int k = 0; k < vetor.length; k++) {
             System.out.println("vetor[" + k + "]: " + vetor[k]);
         }
 
         do {
 
             // Apresentar as opções
-            System.out.println("\n\n****** Análise de um Número: " + vetor + " ******\n");
+            System.out.println("\n\n****** Análise de um Vetor: *******\n");
             System.out.println("7. Maior Elemento");
             System.out.println("8. Menor Elemento");
             System.out.println("9. Crescente ou Não Crescente");
+            System.out.println("10. Sair!");
 
             // Ler opcao
-            System.out.print("Insira uma opção: ");
+            System.out.print("\nInsira uma opção: ");
             opcao = input.nextInt();
 
             System.out.println();
@@ -47,24 +49,22 @@ public class Ex_06 {
 
                 case 7: // Maior Elemento
 
-                    if (maior int[] vetor){
-                        System.out.println("*** Maior Elemento ***");
-                    }
+                    System.out.println("*** Maior Elemento ***: "+ maior(vetor));
+
                     break;
 
                 case 8: // Menor Elemento
 
-                    if (menor(int[]vetor)){
-                        System.out.println("*** Menor Elemento ***");
-                    }
+                    System.out.println("*** Menor Elemento ***: "+ menor(vetor));
+
                     break;
 
                 case 9: // Crescente ou Não Crescente
 
-                    if(primo(numero)){
-                        System.out.println("*** Primo ***");
+                    if(crescente(vetor)){
+                        System.out.println("*** Crescente ***");
                     }else{
-                        System.out.println("*** Não Primo ***");
+                        System.out.println("*** Não Crescente ***");
                     }
 
                     break;
@@ -82,5 +82,4 @@ public class Ex_06 {
 
     }
 }
-    }
-}
+

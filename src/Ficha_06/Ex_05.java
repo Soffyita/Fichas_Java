@@ -16,5 +16,20 @@ public class Ex_05 {
         return numMaior;
     }
 
+    static int menor(int[] vetor) {
+
+        int numMenor = 0;
+
+        numMenor = vetor[0];
+
+        for (int k = 0; k < vetor.length; k++) {
+            if (vetor[k] > numMenor) {
+                numMenor = vetor[k];
+            }
+        }
+        return numMenor;
+    }
+
+
 }
 

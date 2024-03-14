@@ -2,7 +2,7 @@ package Ficha_02;
 
 import java.util.Scanner;
 
-public class EX_04 {
+public class Ex_04 {
     public static void main(String[] args) {
 
         // Importar scanner

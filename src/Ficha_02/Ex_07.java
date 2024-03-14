@@ -16,9 +16,12 @@ public class Ex_07 {
         num = input.nextInt();
 
         //Apresentar o valor
+        if (num % 2 == 0) {
+            System.out.println("Par");
+        } else {
+            System.out.println("Impar");
+        }
 
 
-
-
-
-}}
+    }
+}

@@ -19,26 +19,24 @@ public class Ex_05 {
 
 
 
+        if (num<guess) {
+            System.out.println("Estás a atirar muito para baixo!");
+            System.out.println("Adivinhe o número (1 a 100):");
+            num=input.nextInt();
+
+            System.out.println();
+
+        } else if (num>guess) {
+            System.out.println("Ei lá! Também não é preciso atirar para o sol!");
+            System.out.println("Adivinhe o número (1 a 100):");
+            num=input.nextInt();
 
 
-//        if (num<guess) {
-//            System.out.println("Estás a atirar muito para baixo!");
-//            System.out.println("Adivinhe o número (1 a 100):");
-//            num=input.nextInt();
-//
-//            System.out.println();
-//
-//        } else if (num>guess) {
-//            System.out.println("Ei lá! Também não é preciso atirar para o sol!");
-//            System.out.println("Adivinhe o número (1 a 100):");
-//            num=input.nextInt();
-//
-//
-//        } else if (num==guess) {
-//        System.out.println("Estás contratado! Passas a ser o mágico de serviço!");
-//
-//        }
-//        System.out.println("Better Luck next time!");
+        } else if (num==guess) {
+        System.out.println("Estás contratado! Passas a ser o mágico de serviço!");
+
+        }
+        System.out.println("Better Luck next time!");
 
 
     }

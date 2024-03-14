@@ -28,7 +28,7 @@ public class Ex_02 {
             valorAnual=valorAnual+comissoes[i];
         }
 
-        System.out.println("O valor anual das comissões é de: 2" +valorAnual + " €");
+        System.out.println("O valor anual das comissões é de: " +valorAnual + " €");
 
     }
 }

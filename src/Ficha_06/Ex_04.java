@@ -66,9 +66,21 @@ public class Ex_04 {
                     break;
 
                 case 4: // Perfeito ou Não Perfeito
+                    if(perfeito(numero)){
+                        System.out.println("*** Perfeito ***");
+                    }else{
+                        System.out.println("*** Não Perfeito ***");
+                    }
+
                     break;
 
                 case 5: // Triangular ou Não Triangular
+                    if(triangular(numero)){
+                        System.out.println("*** Triangular ***");
+                    }else{
+                        System.out.println("*** Não Triangular ***");
+                    }
+
                     break;
 
                 case 6: // Trocar de Número
@@ -81,7 +93,7 @@ public class Ex_04 {
 
                 case 7: // Sair
 
-                    System.out.println("*** Até à Próxima! :D ***");
+                    System.out.println("*** See you! ***");
                     break;
 
                 default:

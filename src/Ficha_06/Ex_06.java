@@ -34,10 +34,10 @@ public class Ex_06 {
 
             // Apresentar as opções
             System.out.println("\n\n****** Análise de um Vetor: *******\n");
-            System.out.println("7. Maior Elemento");
-            System.out.println("8. Menor Elemento");
-            System.out.println("9. Crescente ou Não Crescente");
-            System.out.println("10. Sair!");
+            System.out.println("1. Maior Elemento");
+            System.out.println("2. Menor Elemento");
+            System.out.println("3. Crescente ou Não Crescente");
+            System.out.println("4. Sair!");
 
             // Ler opcao
             System.out.print("\nInsira uma opção: ");
@@ -47,19 +47,19 @@ public class Ex_06 {
 
             switch (opcao){
 
-                case 7: // Maior Elemento
+                case 1: // Maior Elemento
 
                     System.out.println("*** Maior Elemento ***: "+ maior(vetor));
 
                     break;
 
-                case 8: // Menor Elemento
+                case 2: // Menor Elemento
 
                     System.out.println("*** Menor Elemento ***: "+ menor(vetor));
 
                     break;
 
-                case 9: // Crescente ou Não Crescente
+                case 3: // Crescente ou Não Crescente
 
                     if(crescente(vetor)){
                         System.out.println("*** Crescente ***");
@@ -69,7 +69,7 @@ public class Ex_06 {
 
                     break;
 
-                case 10: // Sair
+                case 4: // Sair
                     System.out.println("*** Até à Próxima! :D ***");
                     break;
 
@@ -78,7 +78,7 @@ public class Ex_06 {
             }
 
 
-        } while (opcao != 10);
+        } while (opcao != 4);
 
     }
 }

@@ -50,7 +50,7 @@ public class Ex_03 {
         int somaDivisores = 0;
         for (int divisor = 1; divisor < num; divisor++) {
             if (num % divisor == 0) {
-                somaDivisores += divisor;
+                somaDivisores =somaDivisores + divisor;
             }
         }
         if (somaDivisores == num) {
@@ -58,10 +58,13 @@ public class Ex_03 {
         } else {
             return false;
         }
-
+//return somaDivisores==num
     }
 
-
+    /** Método para avaliar se um número é ou não triangular
+     * @param num número a avaliar
+     * @return True se perfeito False se não perfeito
+     */
     public static boolean triangular(int num) {
 
         int somaInteiros = 0, contador = 1;
@@ -75,6 +78,7 @@ public class Ex_03 {
             }
         }
                 return false;
+
             }
 
 

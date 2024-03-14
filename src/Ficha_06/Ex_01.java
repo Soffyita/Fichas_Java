@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ex_01 {
 
     public static void fazerBarulho(String animal) {
-        switch (animal) {
+        switch (animal.toLowerCase()) {
             case "cao" :
                 System.out.println("Au au au");
                 break;

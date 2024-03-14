@@ -2,6 +2,10 @@ package Ficha_06;
 
 public class Ex_05 {
 
+    /** Método que analisa um array de inteiros e retorna o maior elemento
+     * @param vetor vetor a ser analisado
+     * @return Maior Elemento
+     */
     static int maior(int[] vetor) {
 
         int numMaior;
@@ -31,7 +35,7 @@ public class Ex_05 {
     }
 
     static boolean crescente(int[] vetor) {
-        boolean crescente = true;
+        boolean crescente;
 
         for (int k = 1; k < vetor.length; k++) {
             if (vetor[k] <= vetor[k - 1]) {

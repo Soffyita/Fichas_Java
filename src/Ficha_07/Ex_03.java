@@ -5,30 +5,22 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
+import static Ficha_07.Ex_01.imprimirFicheiroConsola;
+import static Ficha_07.Ex_02.criarFicheiroDeTextoComMensagem;
+
 public class Ex_03 {
-
-    public static void lerFicheiroGravarNoutroFicheiro (String caminho) throws FileNotFoundException {
-
-        File sourceFile = new File(caminho);
-        File newFile = new File ("Ficheiros/exercicio_03_Copia.txt");
-
-        Scanner leitorFicheiro = new Scanner(sourceFile);
-        PrintWriter maquinaEscrever = new PrintWriter(newFile);
-
-
-
-        while (leitorFicheiro.hasNextLine()) {
-            String linha = leitorFicheiro.nextLine();
-            maquinaEscrever.println(linha);
-        }
-
-        leitorFicheiro.close();
-        maquinaEscrever.close();
-    }
 
     public static void main(String[] args) throws FileNotFoundException {
 
-        lerFicheiroGravarNoutroFicheiro("Ficheiros/exercicio_03_Copia.txt", "");
+        try {
+            imprimirFicheiroConsola("Ficheiros/exercicio_03_copia.txt");
+            criarFicheiroDeTextoComMensagem("Ficheiros/exercicio_03.txt", "A criar um novo ficheiro.");
+
+        } catch (FileNotFoundException e)
+            {
+
+                System.out.println("Ficheiro Não Encontrado...");
+        }
 
     }
 

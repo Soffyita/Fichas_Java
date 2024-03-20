@@ -5,43 +5,43 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Ex_06 {
-          public static void main(String[] args) throws FileNotFoundException{
+    /**
+     * Método que imprime na consola a pessoa mais velha do ficheiro
+     * @param path caminho para o Ficheiro
+     * @throws FileNotFoundException caso o ficheiro não seja encontrado
+     */
+    public static void pessoaMaisVelha (String path) throws FileNotFoundException {
 
-              //Instanciar o ficheiro
-              File file = new File("Ficheiros/exercicio_06.txt");
+        Scanner leitura = new Scanner(new File(path) );
 
-                // Instanciar um Scanner para o arquivo
-                Scanner leitorFicheiro = new Scanner(new File("Ficheiros/exercicio_06.txt"));
+        String linha;
+        int idadeMaisVelha = 0;
+        String nomeMaisVelha ="";
 
-                // Variáveis para armazenar a pessoa mais velha
-                String nomeMaisVelho = "";
-                int idadeMaisVelha = 0;
+        while (leitura.hasNextLine()) {
 
-                // Iterar sobre cada linha do arquivo
-                while (leitorFicheiro.hasNextLine()) {
-                    String linha = leitorFicheiro.nextLine();
-                    String[] linhaNome = linha.split(",");
+            //Ler linha do ficheiro para variável "linha"
+            linha = leitura.nextLine();
 
-                    // Verificar se a linha foi dividida corretamente em nome e idade
-                    if (linhaNome.length == 2) {
-                        String nome = linhaNome[0];
-                        int idade = Integer.parseInt(linhaNome[1].trim()); // Converter a idade para int
+            //Dividir a linha pela vírgula ","
+            String[] linhaDividida = linha.split(",");
 
-                        // Comparar as idades para determinar a pessoa mais velha
-                        if (idade > idadeMaisVelha) {
-                            nomeMaisVelho = nome;
-                            idadeMaisVelha = idade;
-                        }
-                    }
-                }
-
-                // Imprimir o nome da pessoa mais velha
-                System.out.println("A pessoa mais velha é: " + nomeMaisVelho);
-
-                // Fechar o Scanner
-                leitorFicheiro.close();
-
-
+            //Se a linhaDividida[1] como inteiro MAIOR QUE idadeMaisVelha
+            if (Integer.parseInt(linhaDividida[1]) > idadeMaisVelha) {
+                //Atualizar variáveis para ficar com as informações da pessoa mais velha atual
+                idadeMaisVelha = Integer.parseInt((linhaDividida[1]));
+                nomeMaisVelha = linhaDividida[0];
             }
         }
 
+        System.out.println("***Pessoa Mais Velha***");
+        System.out.println("Nome: " +nomeMaisVelha);
+        System.out.println("Idade: " +idadeMaisVelha);
+
+    }
+
+    public static void main(String[] args) throws FileNotFoundException{
+        pessoaMaisVelha("Ficheiros/exercicio_06.txt");
+
+    }
+}

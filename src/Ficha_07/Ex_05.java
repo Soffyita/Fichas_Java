@@ -15,10 +15,10 @@ public class Ex_05 {
 
 
         //Declarar as variáveis
-        int num, soma=0;
+        int soma=0;
 
         while (leitorFicheiro.hasNextLine()) {
-            num = leitorFicheiro.nextInt();
+           int num = leitorFicheiro.nextInt();
             soma = soma + num;
         }
 

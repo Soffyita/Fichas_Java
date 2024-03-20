@@ -13,8 +13,8 @@ public class Ex_03 {
     public static void main(String[] args) throws FileNotFoundException {
 
         try {
-            imprimirFicheiroConsola("Ficheiros/exercicio_03_copia.txt");
-            criarFicheiroDeTextoComMensagem("Ficheiros/exercicio_03.txt", "A criar um novo ficheiro.");
+            imprimirFicheiroConsola("Ficheiros/exercicio_03.txt");
+            criarFicheiroDeTextoComMensagem("Ficheiros/exercicio_03_copia.txt", "A criar um novo ficheiro.");
 
         } catch (FileNotFoundException e)
             {

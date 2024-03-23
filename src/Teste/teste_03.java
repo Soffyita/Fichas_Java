@@ -16,7 +16,9 @@ public class teste_03 {
             System.out.println("Mtbom");
         } else if (nota>=12) {
             System.out.println("bom");
-        } else if (nota>=9.5) {
+        } else if (nota>=
+
+                9.5) {
             System.out.println("suf");
         } else {
             System.out.println("Nega");
